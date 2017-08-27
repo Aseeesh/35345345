@@ -1,0 +1,12 @@
+.modal .modal-content{
+    padding: 11px!important;
+}
+.modal.bottom-sheet{
+    width: 89%!important;
+    margin: 0 60px!important;
+    max-height:60% !important;
+}
+
+.card .card-action{
+    padding: 0px!important;
+}

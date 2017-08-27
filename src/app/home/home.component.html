@@ -1,0 +1,242 @@
+ <!--  Parallax Section  -->
+
+    <!-- START CONTENT -->
+    <section id="content">
+
+     
+
+
+      <!--start container-->
+      <div class="container">
+<!--          
+        <p class="caption">The tabs structure consists of an unordered list of tabs that have hashes corresponding to tab ids. Then when you click on each tab, only the container with the corresponding tab id will become visible.</p>
+                 <button class="btn btn-warning-confirm waves-effect waves-light">Try Me!</button>
+                 <button class="btn btn-ajax waves-effect waves-light"(click)="Search()">Ajax!</button>
+                  -->
+               <!-- <div class="parallax-container">
+                      <div class="parallax"><img src="assets/img/background.jpg" style="display: block; transform: translate3d(-50%, 181px, 0px);"></div>
+                    </div>   -->
+                <div class="col s12 m12 l4">
+                    <div id="flight-card" class="card">
+                      <div class="card-header amber darken-2">
+                        <div class="card-title">
+                          <h4 class="flight-card-title">Flight</h4>
+                          <p class="flight-card-date">June 18, Thu 04:50</p>
+                        </div>
+                      </div>
+                     
+                    </div>
+                  </div>      
+                  
+                  <div class="divider"></div>
+         
+
+                <div id="preselecting-tab" class="section"> 
+                  <div class="row">
+                    <div class=" col s12 m8 l5">
+                    <div class="row">
+                        <div class="col s12">
+                          <ul class="tabs tab-demo-active z-depth-1 cyan">
+                            <li class="tab col s3"><a class="white-text waves-effect waves-light active" href="#flights">Search Flights</a>
+                            </li>
+                            
+                          </ul>
+                        </div>
+                        <div class="col s12">
+                          <div id="flights" class="col s12  cyan lighten-4">
+                        
+                                  <div class="row">
+
+                                        
+
+                                        <form class="col s12" id="formValidate" action="#">
+                                                <div class="row">
+                                                  <!-- Switch -->
+                                                        <!-- <div class="switch col s6">
+                                                            <label>
+                                                            <h5>-></h5>
+                                                            
+                                                              <input type="checkbox">
+                                                              <span class="lever"></span>
+                                                            <h5><=></h5>
+                                                            </label>
+                                                          </div> -->
+                                                          <div class=" col s8"> 
+                                                              <input class="with-gap flightRadio"  name="group1" type="radio" id="oneWay" />
+                                                              <label for="oneWay">One Way</label>
+                                                            
+                                                              <input class="with-gap flightRadio" name="group1" type="radio" id="twoWay" />
+                                                              <label for="twoWay">Round Trip</label> 
+                                                          </div>                    
+                                                  
+                                                            <div id="divFrom" class="input-field col s12">
+                                                                  
+                                                                            <input type="text" id="from" class="autocomplete"  >
+                                                                            <label for="from">From</label>
+                                                                              
+                                                            </div>
+                                                            <div id="divDestination" class="input-field col s12">
+                                                              
+                                                                          
+                                                                            <input type="text" id="destination" class="autocomplete" >
+                                                                            <label for="destination">Destination</label>
+                                                                           
+                        
+                                                            </div>
+                                                </div>
+                                                <div class="row">
+                                                        <div class="input-field col s6">
+                                                            <div class="input-field col s12">
+                                                                <input id="departure" type="text" class="datepicker">
+                                                                <label for="departure">Departure Date</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="input-field col s6">
+                                                            <div class="input-field col s12">
+                                                                <input id="return" type="text" class="datepicker">
+                                                                <label for="return">Return Date</label>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                                
+                                                  <div class="row col s12">
+
+                                                      <div class="input-field col s6">
+                                                          
+                                                              <input id="return" type="text" class="autocompleteNationality">
+                                                              <label for="return">Nationality</label>
+                                                          
+                                                      </div>
+                                                      <div class="input-field col s6">
+                                                        <select>
+                                                          <option value="" disabled selected>Adults</option>
+                                                          <option value="1">1</option>
+                                                          <option value="2">2</option>
+                                                          <option value="3">3</option>
+                                                        </select>
+                                                        <label></label>
+                                                                  
+                                                      </div>
+                                                    
+                                                      <div class="input-field col s6">
+                                                        <select>
+                                                          <option value="" disabled selected>Children</option>
+                                                          <option value="1">1</option>
+                                                          <option value="2">2</option>
+                                                          <option value="3">3</option>
+                                                        </select>
+                                                        <label></label>
+                                                                  
+                                                      </div>
+
+                                                      
+
+                                                      <div class="input-field col s6">
+                                                        
+                                                          <select>
+                                                            <option value="" disabled selected>Flight Types</option>
+                                                            <option value="1">Economy</option>
+                                                            <option value="2">Business</option>
+                                                            <option value="3">First class</option>
+                                                          </select>
+                                                          <label></label>
+                                                                  
+                                                      </div>
+
+                                                  
+                                                     
+                                                 </div> 
+                                                   <a href="flight-results" class="btn waves-effect waves-light">
+                                                        <i class="material-icons right">send</i>Search Flights
+                                                      </a>
+                                          </form>
+                                  </div>
+                  
+                          </div>
+                        
+                        </div>
+                      </div> 
+                    </div>
+                    <div class="col s12 m4 l7">
+
+                      <!-- <div class="carousel carousel-slider center" data-indicators="true">
+                          <div class="carousel-fixed-item center">
+                            <a class="btn waves-effect white grey-text darken-text-2">button</a>
+                          </div>
+                          <div class="carousel-item white-text" style="background: url(../../assets/img/gallary/1.jpg) center center no-repeat;" href="#one!">
+                              <h2>First Panel</h2> 
+                              
+                              
+                            <p class="white-text">This is your first panel</p>
+                          </div>
+                          <div class="carousel-item  white-text" style="background: url(../../assets/img/gallary/2.jpg) center center no-repeat;"href="#two!">
+                              
+                                <h2>Second Panel</h2>
+                            <p class="white-text">This is your second panel</p>
+                          </div>
+                          <div class="carousel-item  white-text"style="background: url(../../assets/img/gallary/3.jpg) center center no-repeat;" href="#three!">
+                            
+                                <h2>Third Panel</h2>
+                            <p class="white-text">This is your third panel</p>
+                          </div>
+                          <div class="carousel-item  white-text" style="background: url(../../assets/img/gallary/4.jpg) center center no-repeat;" href="#four!">
+          
+                              <h2>Fourth Panel</h2>
+                            <p class="white-text">This is your fourth panel</p>
+                          </div>
+                      </div> -->
+                      <div class="slider">
+                        <ul class="slides">
+                          <li>
+                            <img src="assets/img/gallary/2.jpg"> <!-- random image -->
+                            <div class="caption center-align">
+                              <h3>This is our big Tagline!</h3>
+                              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                            </div>
+                          </li>
+                          <li>
+                            <img src="assets/img/gallary/3.jpg"> <!-- random image -->
+                            <div class="caption left-align">
+                              <h3>Left Aligned Caption</h3>
+                              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                            </div>
+                          </li>
+                          <li>
+                            <img src="assets/img/gallary/4.jpg"> <!-- random image -->
+                            <div class="caption right-align">
+                              <h3>Right Aligned Caption</h3>
+                              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                            </div>
+                          </li>
+                          <li>
+                            <img src="assets/img/gallary/5.jpg"> <!-- random image -->
+                            <div class="caption center-align">
+                              <h3>This is our big Tagline!</h3>
+                              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                                        
+                  
+                      </div>
+                  </div>
+                </div>
+      
+                
+              <app-best-deals></app-best-deals>
+
+  
+      
+      
+      </div>
+      <!--end container-->
+
+    </section>
+    <!-- END CONTENT -->
+
+  
+
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+ 
